@@ -1,14 +1,27 @@
 #cs1300-gallery {
-  background-color: lightblue;
+    background-color: lightblue;
 }
 
 /* Uncomment below if images are way too big.
 Selects all image tags and makes them 500px;
  */
-/*img {*/
-/*  width: 500px;*/
-/*}*/
+img {
+    width: 400px;
+    height: 300px;
+}
+
+button {
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
 
 .gallery-container {
-  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+    /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+    /*use CSS flex to make sure they work on different screen sizes*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

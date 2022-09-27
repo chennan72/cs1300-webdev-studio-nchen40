@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>WebDev Studio</title>
     <!-- import javascript variables and functions -->
-    <script src="app.js" defer></script>
+    <script defer src="app.js"></script>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-  </head>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
 
-  <!-- page content goes into <body> -->
-  <body>
-    <div id="cs1300-gallery">
-      <h1>Welcome to my bakery</h1>
-      <p>Add your own images and styles!</p>
+<!-- page content goes into <body> -->
+<body>
+<div id="cs1300-gallery">
+    <h1>Welcome to my bakery</h1>
+    <p>Add your own images and styles!</p>
 
-      <!-- TODO: PART I Add your own images and use CSS flex to make sure they work on different screen sizes -->
-      <div class="gallery-container">
-        <img class="gallery-item" src="./assets/jeff.jpg" alt="jeff watching u">
-      </div>
-
-      <!-- TODO: PART II Uncomment the line below, and hook up this button to display data from an API -->
-      <!-- <button onclick="updatePage()">Press this button to display some fruit data</button> -->
+    <!-- TODO: PART I Add your own images and use CSS flex to make sure they work on different screen sizes -->
+    <div class="gallery-container">
+        <!--        <img alt="jeff watching u" class="gallery-item" src="./assets/jeff.jpg">-->
+        <img alt="bakery 1" class="gallery-item" src="./assets/1.jpeg">
+        <img alt="bakery 2" class="gallery-item" src="./assets/2.jpeg">
+        <img alt="bakery 3" class="gallery-item" src="./assets/3.jpeg">
+        <img alt="bakery 4" class="gallery-item" src="./assets/4.jpeg">
+        <img alt="bakery 5" class="gallery-item" src="./assets/5.jpeg">
+        <img alt="bakery 6" class="gallery-item" src="./assets/6.jpeg">
     </div>
-  </body>
+
+    <!-- TODO: PART II Uncomment the line below, and hook up this button to display data from an API -->
+    <button onclick="updatePage()">Press this button to display fruit whose sugar > 15</button>
+</div>
+</body>
 
 </html>
