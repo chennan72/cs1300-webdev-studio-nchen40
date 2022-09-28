@@ -38,6 +38,8 @@ const updatePage = async () => {
     // For example, create a new div for all the fruits whose sugar > 15
     filteredFruits.forEach(fruit => {
         const newElement = document.createElement('div');
+        // make each div with color brown
+        newElement.style.backgroundColor = "grey";
         newElement.innerHTML = 'Name: ' + fruit.name + ', Sugar: ' + fruit.nutritions.sugar;
         // append the new element to the gallery
         gallery.append(newElement);
