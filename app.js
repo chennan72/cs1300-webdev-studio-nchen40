@@ -39,8 +39,8 @@ const updatePage = async () => {
     filteredFruits.forEach(fruit => {
         const newElement = document.createElement('div');
         newElement.innerHTML = 'Name: ' + fruit.name + ', Sugar: ' + fruit.nutritions.sugar;
-        const existingElement = document.getElementById('cs1300-gallery');
-        existingElement.append(newElement);
+        // append the new element to the gallery
+        gallery.append(newElement);
     });
 
     // TODO: Append your new element to the page
